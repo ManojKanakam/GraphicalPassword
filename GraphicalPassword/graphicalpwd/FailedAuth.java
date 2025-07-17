@@ -17,9 +17,9 @@ public class FailedAuth {
 		try {
 			username=uname;
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			String dburl="jdbc:mysql://localhost:3306/mydb1";
-			String user="root";
-			String password="root";
+			String dburl="jdbc:mysql://localhost:3306/mydb1";   // your DB URL
+			String user="<your credentials>";
+			String password="<your credentials>";
 			conn=DriverManager.getConnection(dburl,user,password);
 			if(conn!=null) {
 				Statement stmt=conn.createStatement();
