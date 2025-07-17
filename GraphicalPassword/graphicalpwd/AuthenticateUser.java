@@ -34,9 +34,9 @@ public class AuthenticateUser {
 		try {
 			// System.out.println("In getPoints()");
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				String dburl="jdbc:mysql://localhost:3306/mydb1";
-				String user="root";
-				String password="root";
+				String dburl="jdbc:mysql://localhost:3306/mydb1";  // your DB URL
+				String user="<your credentials>";
+				String password="<your credentials>";
 				conn=DriverManager.getConnection(dburl,user,password);
 				if(conn!=null) {
 					Statement stmt=conn.createStatement();
@@ -86,9 +86,9 @@ public class AuthenticateUser {
 		else {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				String dburl="jdbc:mysql://localhost:3306/mydb1";
-				String user="root";
-				String password="root";
+				String dburl="jdbc:mysql://localhost:3306/mydb1"; // your DB URL
+				String user="<your credentials>";
+				String password="<your credentials>";
 				conn=DriverManager.getConnection(dburl,user,password);
 				f=FailedAuth.checkFail(username);
 				f+=1;
