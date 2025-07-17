@@ -18,9 +18,9 @@ public class StoreInDB {
 		int count=0;
 		try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				String dburl="jdbc:mysql://localhost:3306/mydb1";
-				String user="root";
-				String password="root";
+				String dburl="jdbc:mysql://localhost:3306/mydb1";  // your DB URL
+				String user="<your credentials>";
+				String password="<your credentials>";
 				conn=DriverManager.getConnection(dburl,user,password);
 				if(conn!=null) {
 					//System.out.println("Hello-Demo");
@@ -46,9 +46,9 @@ public class StoreInDB {
 		// TODO Auto-generated method stub
 		try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				String dburl="jdbc:mysql://localhost:3306/mydb1";
-				String user="root";
-				String password="root";
+				String dburl="jdbc:mysql://localhost:3306/mydb1";   // your DB URL
+				String user="<your credentials>";
+				String password="<your credentials>";
 				conn=DriverManager.getConnection(dburl,user,password);
 				if(conn!=null) {
 					//System.out.println("Hello-Demo2");
@@ -79,9 +79,9 @@ public class StoreInDB {
 		// TODO Auto-generated method stub
 		try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				String dburl="jdbc:mysql://localhost:3306/mydb1";
-				String user="root";
-				String password="root";
+				String dburl="jdbc:mysql://localhost:3306/mydb1";    // your DB URL
+				String user="<your credentials>";
+				String password="<your credentials>";
 				conn=DriverManager.getConnection(dburl,user,password);
 				if(conn!=null) {
 					//System.out.println("Hello-Demo3");
