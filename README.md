@@ -90,5 +90,3 @@
 ## 👤 Author
 
 Developed as a secure alternative to conventional password systems using Java and SQL with graphical user interaction.
-
-```
